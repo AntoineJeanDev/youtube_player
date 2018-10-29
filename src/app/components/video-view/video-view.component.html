@@ -1,0 +1,28 @@
+<div id="player">
+ <div [hidden]="!showPlayer">
+    <!--<div class="row" id="playButton">
+      <button type="button" class="btn btn-danger" (click)="play()">Play</button>
+    </div>-->
+    <div class="row ">
+      <youtube-player
+      autoplay='1'
+      [videoId]='temp' 
+      (ready)="savePlayer($event)"
+      (change)="onStateChange($event)"
+      >
+    </youtube-player>
+  </div>
+  <div class="row">
+    url :{{yvideo.id}} <br>
+    final url :{{temp}}
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+

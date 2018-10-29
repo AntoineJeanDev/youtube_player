@@ -1,0 +1,18 @@
+<h5>Videos in localstorage: {{this.lSLength}}</h5>
+<div id="searchBar">
+  <div class="row">
+    <form [formGroup]="urlForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        
+        <div class="input-group">
+          <input value="nQP2GBJBuds" type="text" formControlName="id" class="form-control"
+          aria-describedby="urlHelp" placeholder="Enter URL">
+          <span class="input-group-addon">
+            <button type="submit" class="btn btn-success">Search</button>
+          </span>
+        </div>
+        <small id="urlHelp" class="form-text text-muted">Enter a Youtube Video ID or a Youtube url (ex: "https://www.youtube.com/watch?v=xxxxxxxxxxx" or "xxxxxxxxxxx").</small>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<h2>Bookmarks</h2>
+<div *ngFor="let yvideo of bookmarks">
+  <div class="aBookmark">
+    <div class="row">
+      <div class="col-2">
+        URL:<strong>{{yvideo.id}}</strong>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-danger" (click)="deleteBookmark(yvideo)">Delete this bookmark</button>
+      </div>
+    </div>
+  </div>
+</div>

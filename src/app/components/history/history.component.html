@@ -1,0 +1,16 @@
+<h2>History</h2>
+<div *ngFor="let yvideo of videos">
+  <div class="aVideo">
+      <div class="row">
+        <div class="col-2">
+          URL:<strong>{{yvideo.id}}</strong>  
+        </div>
+        <div class="col-2">
+          <button class="btn btn-warning" *ngIf="yvideo.bookmarked == 0" (click)="addBookmark(yvideo)"
+          >Bookmark this video</button>
+          <button class="btn btn-success" (click)="playHistoryVideo(yvideo);"
+          >Play this video</button>
+        </div>
+      </div>
+  </div>
+</div>
