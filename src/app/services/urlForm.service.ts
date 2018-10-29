@@ -19,7 +19,8 @@ export class UrlFormService {
     ) { }
 
   // properties
-  private apiUrl = 'http://localhost:8080/silex/youtube-player-silex/web/index.php';
+  private apiUrl2 = 'http://localhost:8080/silex/youtube-player-silex/web/index.php';
+  private apiUrl = 'http://localhost:8000/index.php';
   private httpOptions = {headers: {'Content-Type': 'application/x-www-form-urlencoded'}};
   private httpOptions2 = {headers: {'Content-Type': 'application/json'}};
   ////// delivery

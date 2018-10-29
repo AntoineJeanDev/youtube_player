@@ -7,9 +7,6 @@ import { HttpClientModule }    from '@angular/common/http';
 // ngx-youtube-player
 import { YoutubePlayerModule } from 'ngx-youtube-player';
 
-// services
-import { UrlFormService } from './services/urlForm.service';
-
 // Components
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -33,7 +30,6 @@ import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
     YoutubePlayerModule
   ],
   providers: [
-    UrlFormService
   ],
   bootstrap: [AppComponent]
 })
